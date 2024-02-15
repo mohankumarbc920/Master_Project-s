@@ -1,0 +1,12 @@
+Input file: /Users/mohanchandru/Documents/Github_pull/ChromeBat/src/contact_matrix.txt
+Convert factor: 0.1
+AVG RMSE: 5.856896472170513
+AVG Spearman correlation Dist vs. Reconstructed Dist: 1.0
+AVG Pearson correlation Dist vs. Reconstructed Dist: 0.9998121356274733
+num_bats=1.0
+generations=10000.0
+min_freq=0.0
+max_freq=0.1
+volume=0.9
+pulse=0.9
+perturbation=0.002
