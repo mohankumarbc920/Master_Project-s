@@ -1,0 +1,49 @@
+######### Parameters for ChromeBat algorithm ##################
+
+#A .log and .pdb will be produced with this name
+output_file=bat
+
+#This is how many structures the algorithm should produce in addition to structures produced in an alpha search
+#1 is the default value
+structs=10
+
+
+### Algorithm Parameters ###
+
+
+#alpha is the conversion factor used to convert the contact matrix into a Distance matrix
+#the formula for distance d based on contact rate c is d(c)=1/(c^alpha)
+#If alpha is not found the ChromeBat will perform a search across alphas in [0,1]
+alpha=0.1,0.3,0.5,0.7,0.9,1.0
+
+#num_bats is how many bats the algo should simulate
+#it impacts runtime linearly, that is doubling the amount of bats will double the runtime
+num_bats=10
+
+#generations is how many iterations of the algorithm will run
+#also impacts runtime linearly
+generations=10000
+
+### Bat Behavioral Variables ###
+
+#a bats frequency determines how aggressively it optimizes
+#A bat with high frequency will fly toward the best known solution at high speed
+min_freq=0
+max_freq=0.1
+
+#A bats volume determines how willing it is to accept a new solution
+#A value of 0 means a bat will always never accept new solution and 1 means it always will
+volume=0.9
+
+#A bat's pulse rate determines how often it stops exploring and teleports to the current best known solution
+#a pulse rate of 1 means it always appears at the best known solution
+#a pulse rate of 0 means it never teleports 
+pulse=0.9
+
+#Perturbation determines how large of a random walk a bat performs after pulsing
+#this is a constant factor multiplied by a Gaussian distribution with mean 0 and std deviation 1 in all dimensions
+perturbation=0.002,0.004,0.006,0.008,0.01
+
+
+
+

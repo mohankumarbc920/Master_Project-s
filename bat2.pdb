@@ -1,0 +1,9 @@
+pdb carefully constructed by Brandon
+ATOM      1   CA MET B1         47.497  48.963  38.716  0.20 10.00
+ATOM      2   CA MET B2         45.188  49.017  32.839  0.20 10.00
+ATOM      3   CA MET B3         41.451  46.277  37.317  0.20 10.00
+ATOM      4   CA MET B4         46.826  43.261  35.689  0.20 10.00
+CONECT    1    2
+CONECT    2    3
+CONECT    3    4
+END
